@@ -1,0 +1,12 @@
+Ubuntu 10.04
+
+    1. http://old-releases.ubuntu.com/releases/10.04.0/
+    2. Change /etc/apt/sources.list to old-releases.ubuntu.com
+
+Dependencies
+
+    apt install nginx
+
+Certificates
+
+    openssl req -x509 -newkey rsa:1024 -keyout /home/ssl/ssl.key -out /home/ssl/ssl.crt -days 3650 -nodes
