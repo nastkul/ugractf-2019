@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form method="post" action="check">
+    <p><label for="lat">Please enter your <span class="emph">latitude</span>:</label> <span class="cpart">55.</span><input id="lat" name="lat" />
+    <p><label for="lon">Please enter your <span class="emph">longitude</span>:</label> <span class="cpart">37.</span><input id="lon" name="lon" />
+    <p><label for="code">Please enter your <span class="emph">Attempt Number Limiting Code (ANLC)</span>:</label> <span class="cpart">04</span><input id="code" name="code" />
+    <p><label for="sub"></label> <input type="submit" id="sub" value="Go with it">
+</form>
+{% endblock %}

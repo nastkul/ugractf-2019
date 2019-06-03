@@ -1,0 +1,11 @@
+version: "3"
+services:
+    py:
+        build: app
+        image: ugractf/bigcitylights
+        restart: always
+        volumes:
+            - ./app:/app
+            - ./codes:/app/codes
+        ports:
+            - 30101:80

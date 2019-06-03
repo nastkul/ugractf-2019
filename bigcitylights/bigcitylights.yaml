@@ -1,0 +1,15 @@
+category: recon
+points:   350
+name:     Огни большого города
+author:   enhydra
+description: >
+    <p>Где находится балкон с таким замечательным видом?</p>
+    <p><em>Примечание 1.</em> Допустимая погрешность ответа — 150 метров.</p>
+    <p><em>Примечание 2.</em> Система одноразовых кодов не содержит известных авторам уязвимостей. Настойчивые попытки получить флаг иным способом, кроме ввода верного ответа в рамках предоставленного количества попыток, считаются атаками на инфраструктуру с соответствующими последствиями для команды.</p>
+links:
+    - https://bigcitylights.ugractf.ru/IMG_2223.jpg
+    - https://bigcitylights.ugractf.ru
+flags:
+    - ugra_come_to_Moscow_we_have_Sokol_and_Sokolniki_and_Sokolinaya_Gora
+    - ugra_come_to_Moscow_we_have_2Sokol_and_1Sokolniki_and_14Sokolinaya_Gora
+    - ugra_come_to_Moscow_we_have_2_Sokol_and_1_Sokolniki_and_14_Sokolinaya_Gora

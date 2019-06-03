@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Big City Lights</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+        <style>
+* {
+	font-family: Montserrat, sans-serif;
+}
+h1 { 
+	text-align: center;
+	color: #395d8a;
+}
+p {
+	color: #395d8a;
+}
+input {
+	font: inherit;
+	background: black;
+	border: 1px solid #294363;
+	color: white;
+}
+input[type="submit"] {
+	border-width: 3px;
+	border-radius: 8px;
+	padding: 5px;
+	color: white;
+}
+form {
+	white-space: nowrap;
+}
+label {
+	color: #395d8a;
+	display: inline-block;
+	width: 35em;
+	text-align: right;
+}
+body {
+	background: black;
+	color: white;
+	margin: 0 auto;
+	max-width: 55em;
+}
+a {
+	color: inherit;
+}
+.err {
+	color: #E32;
+}
+.emph, h1 span {
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	color: #BA4D76;
+}
+.cpart {
+	color: white;
+}
+        </style>
+    </head>
+    <body>
+        <h1>Big City <span>LIGHTS</span></h1>
+        {% block content %}
+	{% endblock %}
+    </body>
+</html>
