@@ -6,7 +6,7 @@ description: >
     <p>9 лет назад одна компания решила обезопасить своих пользователей и предоставить им доступ
     к своему сайту только по самым безопасным протоколам того времени.</p>
     <p>Кто бы мог подумать, что сегодня почти никто и не сможет открыть их сайт...</p>
-    <p><a href="https://legacy.ugractf.ru/" target="_blank">https://legacy.ugractf.ru/</a></p>
+urls:
+    - https://legacy.ugractf.ru/
 flags:
     - "ugra_2010_got_back_today"
-
