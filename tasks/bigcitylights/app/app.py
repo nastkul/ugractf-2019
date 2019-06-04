@@ -40,7 +40,8 @@ def do_check(request):
         lon_part = request.values.get('lon', '').strip()
         code_part = request.values.get('code', '').strip()
         try:
-            [int(i) for i in (lat_part, lon_part, code_part)]
+            if any(int(i) < 0 for i in (lat_part, lon_part, code_part)):
+                raise ValueError
         except ValueError:
             return "presentation-error"
         lat, lon, code = float("55." + lat_part), float("37." + lon_part), "04" + code_part
