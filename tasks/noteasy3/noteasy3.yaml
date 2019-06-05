@@ -1,0 +1,15 @@
+category: crypto
+points:   200
+name:     noteasy³
+author:   nsychev
+description: >
+    <p>ЦТФ — ЭТО</p>
+    <h3>NOTEASY ×</h3>
+    <h2>NOTEASY ×</h2>
+    <h1>NOTEASY</h1>
+    <p><i>Обратите внимание на алфавит: ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz_</i></p>
+urls:
+    - "files/noteasy3/flag.enc.txt"
+flags:
+    - "ugra_eNcrYPt_DaTA_haRDer"
+
