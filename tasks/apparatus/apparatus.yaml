@@ -8,4 +8,4 @@ urls:
     - files/apparatus/apparatus.jpg
     - files/apparatus/apparatus.ino
 flags:
-    - ugra_surgut_novosibirsk_omsk_saratov_samara_taganrog_tambov_tula_vladimir
+    - ugra_surgut_penza_omsk_saratov_samara_taganrog_tambov_tula_vladimir
