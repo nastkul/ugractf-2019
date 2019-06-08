@@ -1,0 +1,11 @@
+category: hardware
+points:   500
+name:     apparatus
+author:   enhydra
+description: >
+    <p>С помощью данного устройства можно не только, но и!
+urls:
+    - files/apparatus/apparatus.jpg
+    - files/apparatus/apparatus.ino
+flags:
+    - ugra_surgut_novosibirsk_omsk_saratov_samara_taganrog_tambov_tula_vladimir

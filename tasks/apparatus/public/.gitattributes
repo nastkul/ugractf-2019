@@ -1,0 +1,2 @@
+apparatus.jpg filter=lfs diff=lfs merge=lfs -text
+apparatus-2cc94c1b6ec29159505d27e55513d678.jpg filter=lfs diff=lfs merge=lfs -text
