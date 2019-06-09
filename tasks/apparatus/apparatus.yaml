@@ -7,5 +7,6 @@ description: >
 urls:
     - files/apparatus/apparatus.jpg
     - files/apparatus/apparatus.ino
+    - files/apparatus/apparatus.mp4
 flags:
-    - ugra_penza_omsk_saratov_samara_taganrog_tambov_tula_vladimir
+    - ugra_saratov_vladimir_penza_tula_taganrog_samara_omsk_kirov_tambov
