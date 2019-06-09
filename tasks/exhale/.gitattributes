@@ -1,0 +1,2 @@
+trump-full.mp4 filter=lfs diff=lfs merge=lfs -text
+public/trump.mp4 filter=lfs diff=lfs merge=lfs -text
