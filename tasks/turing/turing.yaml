@@ -1,0 +1,14 @@
+category: ppc
+points:   150
+name:     Turing Complete
+author:   nsychev
+description: >
+    <p>Как вы думаете, что такое тьюринг-полный язык?</p>
+    <p>В любом случае, попробуйте запрограммировать самую настоящую машину Тьюринга.</p.
+    <p><i>Флаг от этого задания будет доступен на странице «отчёт» после решения задачи
+    «Turing Complete».</i></p>
+urls:
+    - "https://contest.yandex.ru/contest/12894/problems/1"
+flags:
+    - "ugra_turing_code_magic"
+
