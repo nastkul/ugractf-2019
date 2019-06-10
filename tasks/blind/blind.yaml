@@ -1,0 +1,10 @@
+category: stegano
+points:   100
+name:     Учебник
+author:   nsychev
+description: >
+    <p>Даже слепой может читать между строк...</p>
+urls:
+    - "files/blind/task.pdf"
+flags:
+    - "ugra_preview"
