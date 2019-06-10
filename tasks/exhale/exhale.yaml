@@ -3,7 +3,8 @@ points:   100
 name:     Леденящее дыхание
 author:   enhydra
 description: >
-    И так всё понятно.
+    <p>И так всё понятно.</p>
+    <p><i>Подсказка: <a href="https://www.youtube.com/watch?v=_FqmGcERGrg">оригинал</a></i></p>
 urls:
     - files/exhale/trump.mp4
 flags:

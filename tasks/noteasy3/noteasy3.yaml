@@ -58,6 +58,7 @@ description: |-
                       П
     </pre>
     <p>Алфавит шифра: <code>ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz_</code></p>
+    <p><i>Подсказка: cherchez la fonction</i></p>
 urls:
     - "files/noteasy3/flag.enc.txt"
 flags:
