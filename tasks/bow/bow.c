@@ -232,7 +232,7 @@ double avg(double a, double b)
 
 int simulate_hit(int ang, int sl, int sr, int leg)
 {
-    double dt = 1.001;
+    double dt = 0.001;
     double g = 9.8;
     double k = exp(log(0.75) - leg / 10) + 0.25;
     double rad = (ang - 20) * 9 * M_PI / 180;
