@@ -5,5 +5,5 @@ author:   ksixty
 description: >
     <p>Вы запустите.</p>
     <p><code>ssh game@game.ugractf.ru</code></p>
-links:
+urls:
     - files/bow/bow
