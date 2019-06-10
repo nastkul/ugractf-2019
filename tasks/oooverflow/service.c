@@ -15,6 +15,7 @@ void print_flag() {
 int main() {
     char buffer[50];
     printf("Segfault v. 1.0\nCopyright 2019, OOO \"TP\"\n\nWhat's your name?\n");
+    fflush(stdout);
     gets(buffer);
     printf("Hello, ");
     printf(buffer);
