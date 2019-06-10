@@ -1,0 +1,9 @@
+category: reverse
+points:   450
+name:     Арбалеты Сибири
+author:   ksixty
+description: >
+    <p>Вы запустите.</p>
+    <p><code>ssh game@game.ugractf.ru</code></p>
+links:
+    - files/bow/bow
