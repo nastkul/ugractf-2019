@@ -11,7 +11,7 @@ description: >
     <p><i>Напоминаем, что систему Яндекс.Контест взламывать не надо.</i></p>
 urls:
     - "https://contest.yandex.ru/contest/12894/problems/3"
-    - "/files/extrasense/check"
+    - "files/extrasense/check"
 flags:
     - "ugra_peter_pwner_is_guesser"
 
