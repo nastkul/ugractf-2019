@@ -1,0 +1,13 @@
+version: "2"
+services:
+    bin:
+        build: .
+        image: ugractf/oooverflow2
+        restart: always
+        volumes:
+            - ./public:/app
+        ports:
+            - "5003:5000"
+        cpus: "0.2"
+        memory: "128M"
+        pids_limit: 30
