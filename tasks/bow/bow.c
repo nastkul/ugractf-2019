@@ -263,7 +263,7 @@ int simulate_hit(int ang, int sl, int sr, int leg)
         {
             clear();
             endwin();
-            FILE* fd = fopen("flag", "r");
+            FILE* fd = fopen("/flag/flag", "r");
             char flag[64];
             fscanf(fd, "%s", flag);
             puts(flag);

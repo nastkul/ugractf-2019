@@ -4,6 +4,8 @@ name:     Арбалеты Сибири
 author:   ksixty
 description: >
     <p>Вы запустите.</p>
-    <p><code>ssh game@game.ugractf.ru -p 5004</code></p>
+    <p><code>ssh game@ugractf.ru -p 5004</code></p>
 urls:
     - files/bow/bow
+flags:
+    - "ugra_you_have_found_the_correct_vector"

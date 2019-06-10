@@ -6,6 +6,7 @@ services:
         restart: always
         volumes:
             - ./public:/app
+            - ./flag:/flag
         ports:
             - "5004:22"
 
