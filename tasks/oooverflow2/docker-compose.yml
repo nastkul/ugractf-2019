@@ -7,6 +7,7 @@ services:
         volumes:
             - ./app:/app
             - ./public:/app/public
+            - ./flag.txt:/app/public/flag.txt
         ports:
             - "5003:5000"
         cpus: 0.2
