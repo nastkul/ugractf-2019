@@ -5,7 +5,7 @@ author:   javach
 description: >
     <p>Сотрудники одного московского ООО учли свои ошибки. Теперь их знаменитая система защиты
     SegFault™ работает безотказно. Или нет.</p>
-    <p><code>nc s41.ugractf.ru 5003</code></p>
+    <p><code>nc ugractf.ru 5003</code></p>
 urls:
     - "files/oooverflow2/service"
 flags:

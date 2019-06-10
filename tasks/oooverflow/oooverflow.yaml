@@ -5,7 +5,7 @@ author:   javach
 description: >
     <p>Сотрудники одного московского ООО разработали уникальную систему защиты под названием
     SegFault™, которая срабатывает, когда кто-то пытается взломать их программы. Или нет.</p>
-    <p><code>nc s41.ugractf.ru 5002</code></p>
+    <p><code>nc ugractf.ru 5002</code></p>
 urls:
     - "files/oooverflow/service"
 flags:
