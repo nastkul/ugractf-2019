@@ -262,13 +262,17 @@ int simulate_hit(int ang, int sl, int sr, int leg)
         if (slw_equ(p[0], 1337) && slw_equ(p[1], 64) && slw_equ(p[2], 606))
         {
             clear();
-            endwin();
+            refresh();
             FILE* fd = fopen("/flag/flag", "r");
             char flag[64];
             fscanf(fd, "%s", flag);
-            puts(flag);
+            cmvprintw(11, "ПОЗДРАВЛЯЕМ!");
+            cmvprintw(12, flag);
             fclose(fd);
-            exit(0);
+            while (1)
+            {
+                usleep(1000000);
+            }
         }
 
         if (!higher && p[1] > 63) {
