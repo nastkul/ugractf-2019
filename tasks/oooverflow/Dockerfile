@@ -6,4 +6,4 @@ WORKDIR /app
 EXPOSE 5000
 
 USER nobody
-CMD ["socat", "-T", "5", "tcp-l:5000,reuseaddr,fork", "exec:/app/service"]
+CMD ["socat", "-T", "5", "tcp-l:5000,reuseaddr,fork", "exec:/app/run.sh"]
