@@ -1,0 +1,12 @@
+category: forensics
+points:   75
+name:     Сразу видно, олдскул
+author:   nsychev
+description: >
+    <p>Помимо любителей анонимности, всякими специфичными протоколами 
+    пользуются просто ради забавы... Разумеется, все секреты хранятся
+    общедоступно и никак не скрываются.</p>
+urls:
+    - files/anonymous/dump.pcap
+flags:
+    - "ugra_i_like_gopher_links"

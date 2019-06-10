@@ -1,0 +1,11 @@
+category: forensics
+points:   100
+name:     Секретные архивы
+author:   nsychev
+description: >
+    <p>Как известно, в интернете ничего заблокировать нельзя: те, кому нужно,
+    смогут найти способ передать секретные данные.</p>
+urls:
+    - files/anonymous/dump.pcap
+flags:
+    - "ugra_you_are_good_decryptor"
