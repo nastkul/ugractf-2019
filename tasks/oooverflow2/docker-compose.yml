@@ -9,6 +9,6 @@ services:
             - ./public:/app/public
         ports:
             - "5003:5000"
-        cpus: "0.2"
+        cpus: 0.2
         mem_limit: "128M"
         pids_limit: 30
