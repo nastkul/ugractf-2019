@@ -5,6 +5,7 @@
 #include <locale.h>
 #include <string.h>
 #include <math.h>
+#include <stdlib.h>
 
 int W = 80;
 int H = 24;
@@ -260,8 +261,14 @@ int simulate_hit(int ang, int sl, int sr, int leg)
 
         if (slw_equ(p[0], 1337) && slw_equ(p[1], 64) && slw_equ(p[2], 606))
         {
-            puts("и вот случился бы cat ./flag");
-            return 0;
+            clear();
+            endwin();
+            FILE* fd = fopen("flag", "r");
+            char flag[64];
+            fscanf(fd, "%s", flag);
+            puts(flag);
+            fclose(fd);
+            exit(0);
         }
 
         if (!higher && p[1] > 63) {
