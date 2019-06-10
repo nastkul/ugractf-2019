@@ -86,7 +86,7 @@ void binput(int* value, char* label, const int dy)
             }
 
             refresh();
-            usleep(0xFEEDAB);
+            usleep(0x1ABAB);
         }
         *value = cval;
     };
