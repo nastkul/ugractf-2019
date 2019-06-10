@@ -13,10 +13,16 @@ void print_flag() {
 }
 
 int main() {
-    char buffer[10];
-    printf("Segfault v. 1.0\nCopyright 2019, OOO \"TP\"\n\nPress enter to start.");
+    char buffer[50];
+    printf("Segfault v. 1.0\nCopyright 2019, OOO \"TP\"\n\nWhat's your name?\n");
     gets(buffer);
-    printf("Press enter again.\n");
+    printf("Hello, ");
+    printf(buffer);
+    printf("\n");
+    printf("Do you agree to collect your personal data?\n");
+    fflush(stdout);
     gets(buffer);
+    printf("It doesn't matter.\n");
+    fflush(stdout);
     return 0;
 }
