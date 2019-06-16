@@ -1,6 +1,6 @@
 # Ugra CTF 2019
 
-10–11 июня 2019 года | [Сайт](https://ugractf.ru)
+10–11 июня 2019 года | [Сайт](https://ugractf.ru) | **[Результаты](SCOREBOARD.md)**
 
 ## Таски
 
