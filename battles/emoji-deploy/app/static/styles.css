@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    font-weight: 700;
+}
+
+.flex-root {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-responsive-row {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 700;
+    padding: 5px 10px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+textarea {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+}
+
+button:hover {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+}

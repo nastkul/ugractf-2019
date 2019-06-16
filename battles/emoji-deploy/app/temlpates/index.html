@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Emoji Translator</title>
+        <script src="static/script.js"></script>
+        <link rel="stylesheet" href="static/styles.css">
+    </head>
+    <body>
+        <div class="flex-root flex-column">
+            <div class="flex-responsive-row">
+                <div style="padding: 10px;">
+                    <p>Эмодзи</p>
+                    <textarea rows="12" cols="40" id="emoji"></textarea>
+                </div>
+                
+                <div class="flex-column" style="padding: 10px; font-weight: 700">
+                    <button id="emoji-text" style="margin-top:40px;">→</button>
+                    <button id="text-emoji" style="margin-top:30px;">←</button>
+                </div>
+                <div style="padding: 10px;">
+                    <p>Текст</p>
+                    <textarea rows="12" cols="40" id="text"></textarea>
+                </div>
+            </div>
+            <div>
+                <p style="text-align: center">Добавить свой перевод</p>
+                <div class="flex-responsive-row">
+                    <div class="flex-column" style="padding-right: 15px;">
+                        <div>Эмодзи</div>
+                        <textarea id="new-emoji" cols="10" rows="1"></textarea>
+                    </div>
+                    <div class="flex-column" style="padding-leftt: 15px">
+                        <div>Текст</div>
+                        <textarea id="new-text" cols="10" rows="1"></textarea>
+                    </div>
+                </div>
+            </div>
+            <button style="margin-top: 10px; padding: 10px;" id="new-translation">ДОБАВИТЬ</button>
+        </div>
+    </body>
+</html>
