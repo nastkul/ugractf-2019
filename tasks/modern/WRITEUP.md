@@ -27,4 +27,3 @@
 А ещё можно найти вот этот [ответ на StackExchange](https://security.stackexchange.com/questions/108676/need-to-access-old-forgotten-router-that-only-supports-sslv3), где рассказывается, как включить SSLv3 во многих браузерах.
 
 Флаг: **ugra_2010_got_back_today**
-

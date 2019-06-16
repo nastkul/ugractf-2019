@@ -23,4 +23,3 @@
 > [Код эксплойта](exploit.py)
 
 Флаг: **ugra_in_elliptic_we_trust**
-
