@@ -29,7 +29,7 @@
 1. [Emoji Translator I](battles/emoji-deploy/)
 2. [Emoji Translator II](battles/emoji/)
 3. [Тетрис](battles/tetris/)
-4. [Plan9](battles/plan/)
+4. [Plan 9](battles/plan9/)
 5. [Подтверждение регистрации](battles/signupnowhere/)
 
 ## Команда соревнования
