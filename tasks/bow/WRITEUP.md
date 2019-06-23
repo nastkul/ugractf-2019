@@ -79,7 +79,7 @@ while ((int)local_50 < 0x50) // по-русски — 80
 Полёт стрелы моделировался в трёхмерном пространстве. Набежавшие параметры к ним имели вот какое отношение.
 
 **Угол** отвечал за поворот существа `vektor` вокруг своей оси. Значения от 0 до 40 включительно экстраполировались до ±180° и превращались в радианы:
-<p align="center"><img src="https://latex.codecogs.com/gif.latex?a%3d%5Cfrac%7B9%5Cpi%28ang%20-%2020%29%7D%7B180%7D"></p>
+<p align="center"><img src="https://latex.codecogs.com/gif.latex?%5Ctheta%3d%5Cfrac%7B9%5Cpi%28ang%20-%2020%29%7D%7B180%7D"></p>
   
 **Сила левой и правой руки** определяли начальную скорость по горизонтали и вертикали своим отношением:<p align="center"><img src="https://latex.codecogs.com/gif.latex?v_%7B0%7D%3d%5Cbegin%7Bpmatrix%7D%20%5Cfrac%7B13.37L%7D%7B2R&plus;1%7D%5C%5C%5B.5em%5D%20%5Cfrac%7B1.337L%7D%7B2R&plus;1%7D%5C%5C%20%5Cend%7Bpmatrix%7D"></p>
   
