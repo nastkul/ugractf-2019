@@ -84,7 +84,7 @@ while ((int)local_50 < 0x50) // по-русски — 80
 **Сила левой и правой руки** определяли начальную скорость по горизонтали и вертикали своим отношением:<p align="center"><img src="https://latex.codecogs.com/gif.latex?v_%7B0%7D%3d%5Cbegin%7Bpmatrix%7D%20%5Cfrac%7B13.37L%7D%7B2R&plus;1%7D%5C%5C%5B.5em%5D%20%5Cfrac%7B1.337L%7D%7B2R&plus;1%7D%5C%5C%20%5Cend%7Bpmatrix%7D"></p>
   
 **Легендарность** — параметр функции, задававшей сопротивление воздуха:
-<p align="center"><img src="https://latex.codecogs.com/gif.latex?k%3d%5Cexp%20%5Cleft%20%28%20log%280.75%29%20-%200.1%5Ccdot%5Cmathrm%7Blegendarity%7D%20%5Cright%20%29%20&plus;%200.25"></p>
+<p align="center"><img src="https://latex.codecogs.com/gif.latex?k%3d%5Cexp%20%5Cleft%20%28%20%5Clog%280.75%29%20-%200.1%5Ccdot%5Cmathrm%7Blegendarity%7D%20%5Cright%20%29%20&plus;%200.25"></p>
 
 Далее нехитрыми численными методами (спасибо Диме, Калану и Саше за подсказки!) считалось горизонтальное и вертикальное ускорение, скорость и путь — довольно школьная физика:
 <p align="center"><img src="https://latex.codecogs.com/gif.latex?%5Cbegin%7Balign*%7D%20%5Coverrightarrow%7Ba_n%7D%20%26%3D%20-k%5Coverrightarrow%7Bv_n%7D-%5Coverrightarrow%7BG%7D%20%5C%5C%5B0.75em%5D%20%5Coverrightarrow%7Bv_%7Bn&plus;1%7D%7D%20%26%3D%20v_n%20&plus;%20%5Coverrightarrow%7Ba_n%7D%20%5Ccdot%20dt%5C%5C%5B0.75em%5D%20%5Coverrightarrow%7BS_%7Bn&plus;1%7D%7D%20%26%3D%20S_n%20&plus;%20%5Coverrightarrow%7Bv_n%7D%20%5Ccdot%20dt%5C%5C%5B0.75em%5D%20%5Cbegin%7Bpmatrix%7Dx_n%5C%5Cy_n%5C%5Cz_n%5Cend%7Bpmatrix%7D%20%26%3D%20%5Cbegin%7Bpmatrix%7D%20%5Coverrightarrow%7BS%7D%20%5Ccdot%20%5Ccos%5Ctheta%5C%5C%20%5Coverrightarrow%7BS%7D%5C%5C%20%5Coverrightarrow%7BS%7D%20%5Ccdot%20%5Csin%5Ctheta%5C%5C%20%5Cend%7Bpmatrix%7D%20%5Cend%7Balign*%7D"><br></p>
