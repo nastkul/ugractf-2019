@@ -11,7 +11,7 @@ import tqdm
 import os
 ```
 
-Для того, чтобы минимизировать влияние JPEG-сжатия на сравнение кадров, будем их предобрабатывать фильтром поиска границ — кадры будут превращаться в чёрно-белые контуры. Параметры взяты из [туториала про эдж-детект](https://blog.sicara.com/opencv-edge-detection-tutorial-7c3303f10788).
+Чтобы минимизировать влияние JPEG-сжатия на сравнение кадров, будем их предобрабатывать фильтром поиска границ — кадры будут превращаться в чёрно-белые контуры. Параметры взяты из [туториала про эдж-детект](https://blog.sicara.com/opencv-edge-detection-tutorial-7c3303f10788).
 
 ```python
 def edge_filter(im):
@@ -31,12 +31,16 @@ for n_frame in tqdm.tqdm(range(int(cap.get(cv2.CAP_PROP_FRAME_COUNT)))):
         samples.append(edge_filter(frame))
 ```
 
-Далее будем для каждого кадра оригинального видео считать расстояние до сэмплов (`np.linalg.norm` от поэлементной разницы двух кадров) и запоминать, где расстояние получилось наименьшим.
+Далее прочитаем кадры оригинального видео, также применяя к ним фильтр поиска границ. Нам нужно понять, насколько текущий кадр оригинала похож на кадры из `samples`. Для этого будем считать метрику похожести, или расстояние.
+
+Кадры считываются и хранятся в многомерных numpy-массивах. Их можно поэлементно вычитать: значением выражения `frame - sample` будет массив, равный по размеру исходному, состоящий из поэлементной разницы между соответствующими значениями. В качестве расстояния выберем самую стандартную для этого функцию `np.linalg.norm`, которая посчитает сумму квадратов элементов массива разностей. Чем сильнее отличаются значения, тем больше квадрат их разности, тем больше расстояние.
+
+Будем запоминать расстояние и номер кадра, если расстояние меньше, чем ранее найденный минимум.
 
 ```python
 ref_cap = cv2.VideoCapture('donaldjtrumpimmigrationcompromise.mp4')
 best_frames = [(None, None) for _ in samples]
-for n_frame in tqdm.tqdm_notebook(range(int(ref_cap.get(cv2.CAP_PROP_FRAME_COUNT)))):
+for n_frame in tqdm.tqdm(range(int(ref_cap.get(cv2.CAP_PROP_FRAME_COUNT)))):
     _, frame = ref_cap.read()
     frame = edge_filter(frame)
 
@@ -59,15 +63,17 @@ print([n for n, _ in best_frames])
 Отрежем, начиная с найденных позиций, сегменты по три секунды.
 
 ```python
-for n_best, (best_frame, best_dist) in enumerate(best_frames):
-    os.system("ffmpeg -ss %.3f -i donaldjtrumpimmigrationcompromise.mp4 -b:v 4096k -t 3 trump-part-%02d.mp4" %
+for n_best, (best_frame, _) in enumerate(best_frames):
+    os.system("ffmpeg -y -ss %.3f -i donaldjtrumpimmigrationcompromise.mp4 -b:v 4096k -t 3 trump-part-%02d.mp4" %
               ((best_frame - 4) / 29.97, n_best))
 ```
 
 Склеим их.
 
-```bash
-ffmpeg -f concat -safe 0 -i <(ls trump-part-*.mp4 | sed -E "s,.*,file '"$(pwd)"/&',") -map 0 -c copy trump-full.mp4
+```python
+os.system("""
+    ffmpeg -f concat -safe 0 -i <(ls trump-part-*.mp4 | sed -E "s,.*,file '"$(pwd)"/&',") -map 0 -c copy trump-full.mp4
+""")
 ```
 
 Получится [приблизительно такое видео](trump-full.mp4).
